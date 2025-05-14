@@ -27,7 +27,7 @@ h2 {
     font-size: 3.2rem;
 }
 
-.contenedor {
+.container {
     max-width: 1200px;
     width: 95%;
     margin: 0 auto;
@@ -37,7 +37,7 @@ p {
     font-size: 2rem;
 }
 
-.entrada-blog a {
+.blog-post a {
     display: inline-block;
     background-color: #2196F3;
     color: white;

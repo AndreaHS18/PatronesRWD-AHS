@@ -47,5 +47,47 @@ p {
     text-transform: uppercase;
 }
 
+/* Dispositivos pequeños (celulares) */
+@media (min-width: 480px) {
+    
+}
 
-/** CODIGO AQUI **/
+/* Dispositivos medianos (tablet) */
+@media (min-width: 768px) {
+    .layout-shifter {
+        display: grid;
+        grid-template-areas: "content"
+                             "lower";
+    }
+
+    .sidebar {
+        grid-area: lower;
+    }
+
+    .main-content {
+        grid-area: content;
+        display: grid;
+        grid-template-areas: "post1 post2";
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+    }
+}
+
+/* Dispositivos medianos-grandes (laptop) */
+@media (min-width: 992px) {
+    .layout-shifter {
+        grid-template-areas: "content sidebar";
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+    }
+
+    .main-content {
+        grid-area: content;
+        display: grid;
+        grid-template-areas: "post1"
+                             "post2";
+        grid-template-columns: unset;
+    }
+}
